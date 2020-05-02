@@ -41,34 +41,28 @@ $ yarn start
 
 ## Follow directions on https://docs.expo.io/guides/using-nextjs/
 
-```
-# Use the awesomeness of next-adapter (thanks to the kickass expo team!)
-$ yarn add -D @expo/next-adapter
 
-# Run this to make code changes to your project 
-$ yarn next-repo
+#### Use the awesomeness of next-adapter (thanks to the kickass expo team!)
+`$ yarn add -D @expo/next-adapter`
 
-# Ensure next app loads in http://localhost:3000/
+#### Run this to make code changes to your project 
+`$ yarn next-repo`
 
-$ yarn next dev
+#### Ensure next app loads in http://localhost:3000/
+`$ yarn next dev`
 
-# Add image, font and plugin support for next
+#### Add image, font and plugin support for next
+`$ yarn add next-images next-fonts next-transpile-modules next-compose-plugins`
 
-$ yarn add next-images next-fonts next-transpile-modules next-compose-plugins
+#### Add `expo-next-react-navigation`, at time of writing: 1.1.6 (thanks to [@nandorojo](https://github.com/nandorojo))
+`$ yarn add expo-next-react-navigation@v5`
 
-# Add `expo-next-react-navigation`, at time of writing: 1.1.6 (thanks to [@nandorojo](https://github.com/nandorojo))
+#### Add `react-navigation` v5 or later (v5 had a load of breaking changes from v4)
+`$ yarn add @react-navigation/native @react-navigation/bottom-tabs @react-navigation/stack`
 
-$ yarn add expo-next-react-navigation@v5
+#### Install the following with expo to ensure compatibility (at time of writing: Expo SDK37)
+`$ expo install react-native-safe-area-context react-native-screens react-native-vector-icons react-native-gesture-handler @react-native-community/masked-view`
 
-# Add `react-navigation` v5 or later (v5 had a load of breaking changes from v4)
-
-$ yarn add @react-navigation/native @react-navigation/bottom-tabs @react-navigation/stack
-
-# Install the following with expo to ensure compatibility (at time of writing: Expo SDK37)
-
-$ expo install react-native-safe-area-context react-native-screens react-native-vector-icons react-native-gesture-handler @react-native-community/masked-view
-
-```
 
 ## Your `package.json` may look like this:
 ```
