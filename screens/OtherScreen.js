@@ -1,9 +1,13 @@
 import * as React from 'react'
 import { SafeAreaView, Button, Text, View } from 'react-native'
-import { Link } from 'expo-next-react-navigation'
+import { Link, useRouting } from 'expo-next-react-navigation'
 
 export function OtherScreen({navigation}) {
-  
+  const { getParam } = useRouting()
+  const id = getParam('id')
+  const name = getParam('name')
+  console.log(id, name)
+
   return (
     <SafeAreaView style={{ flex: 1 }}>
       {
